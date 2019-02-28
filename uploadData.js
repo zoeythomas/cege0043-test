@@ -15,7 +15,7 @@ client.open('POST','http://developer.cege.ucl.ac.uk:30250/reflectData',true);
 client.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 client.onreadystatechange = dataUploaded;
 client.send(postString);
-p}
+}
 // create the code to wait for the response from the data server, and process the response once it is received
 
 function dataUploaded() {
