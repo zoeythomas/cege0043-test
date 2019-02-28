@@ -28,6 +28,9 @@ postString=postString+"&lecturetime=afternoon";
 // now get the select box values
 var language = document.getElementById("languageselectbox").value;
 postString = postString + "&language="+language;
+// pop an alert for display
+alert(postString);
+
 processData(postString);
 }
 
@@ -48,4 +51,3 @@ if (client.readyState == 4) {
 document.getElementById("dataUploadResult").innerHTML = client.responseText;
 }
 }
-
