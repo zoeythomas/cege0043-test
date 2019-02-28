@@ -5,6 +5,7 @@ var module = document.getElementById("module").value;
 var postString = "name="+name +"&surname="+surname+"&module="+module;
 alert (postString);
 alert ("start data upload");
+processData(postString);
 }
 
 var client; // the global variable that holds the request
@@ -24,3 +25,4 @@ if (client.readyState == 4) {
 document.getElementById("dataUploadResult").innerHTML = client.responseText;
 }
 }
+
